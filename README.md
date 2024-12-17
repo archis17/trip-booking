@@ -1,3 +1,5 @@
+Live Link : https://prismatic-rugelach-88bd0a.netlify.app/
+
 Inceptioners Travel Agency Booking System
 Project Description
 The Booking Management System is a full-stack web application using MERN designed to manage travel packages, bookings, and administration tasks. It allows users to explore available travel packages, make bookings, and enables administrators to manage packages and view customer bookings.
