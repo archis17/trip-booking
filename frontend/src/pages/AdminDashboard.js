@@ -20,7 +20,7 @@ const AdminDashboard = () => {
       setLoading(true);
       try {
         // Fetch existing packages
-        const packagesResponse = await axios.get('http://localhost:5000/api/admin/packages', {
+        const packagesResponse = await axios.get('https://trip-booking-qo94.onrender.com/api/admin/packages', {
           headers: {
             username: 'admin',  // Direct username
             password: 'adminpassword'  // Direct password
@@ -28,7 +28,7 @@ const AdminDashboard = () => {
         });
     
         // Fetch existing bookings
-        const bookingsResponse = await axios.get('http://localhost:5000/api/admin/bookings', {
+        const bookingsResponse = await axios.get('https://trip-booking-qo94.onrender.com/api/admin/bookings', {
           headers: {
             username: 'admin',  // Direct username
             password: 'adminpassword'  // Direct password
@@ -58,7 +58,7 @@ const AdminDashboard = () => {
 
     try {
       const response = await axios.post(
-        'http://localhost:5000/api/admin/packages',
+        'https://trip-booking-qo94.onrender.com/api/admin/packages',
         {
           ...newPackage,  // Spread the newPackage object
           availableDates, // Convert available dates into an array
@@ -83,7 +83,7 @@ const AdminDashboard = () => {
   const handleDeletePackage = async (packageId) => {
     setError(null);
     try {
-      await axios.delete(`http://localhost:5000/api/admin/packages/${packageId}`, {
+      await axios.delete(`https://trip-booking-qo94.onrender.com/api/admin/packages/${packageId}`, {
         headers: {
           username: 'admin',  // Direct username
           password: 'adminpassword'  // Direct password

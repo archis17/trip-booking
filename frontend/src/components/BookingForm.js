@@ -30,7 +30,7 @@ const BookingForm = ({ packageId, price }) => {
       const totalPrice = price * formData.travelers;
 
       // Send POST request to backend
-      const response = await axios.post('http://localhost:5000/api/bookings', {
+      const response = await axios.post('https://trip-booking-qo94.onrender.com/api/bookings', {
         packageId,
         ...formData,
         totalPrice,

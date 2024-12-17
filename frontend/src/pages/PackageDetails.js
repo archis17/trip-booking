@@ -14,7 +14,7 @@ const PackageDetails = () => {
     const fetchPackageDetails = async () => {
       try {
         // Ensure you have the correct backend URL
-        const response = await axios.get(`http://localhost:5000/api/packages/${id}`);
+        const response = await axios.get(`https://trip-booking-qo94.onrender.com/api/packages/${id}`);
         setPackageDetails(response.data);
         setLoading(false);
       } catch (err) {
