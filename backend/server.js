@@ -13,7 +13,7 @@ require('dotenv').config();
 connectDB();
 
 const corsOptions = {
-  origin: ['https://luminous-palmier-aaaca6.netlify.app/',], // Allow multiple origins
+  origin: ['*',], // Allow multiple origins
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   allowedHeaders: ['Content-Type', 'Authorization', 'username', 'password'],
   credentials: true
