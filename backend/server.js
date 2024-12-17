@@ -13,7 +13,7 @@ require('dotenv').config();
 connectDB();
 
 const corsOptions = {
-  origin: ['*',], // Allow multiple origins
+  origin: ['https://prismatic-rugelach-88bd0a.netlify.app',], // Allow multiple origins
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   allowedHeaders: ['Content-Type', 'Authorization', 'username', 'password'],
   credentials: true
